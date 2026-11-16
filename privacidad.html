@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KN. — Política de privacidad</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0a0a09">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a09'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23e2bb7a'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/antonio-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    /* Idioma: el mismo que el visitante eligió en la página principal (o ?lang=en en la URL). */
+    (function () {
+      var lang = 'es';
+      try {
+        var q = new URLSearchParams(location.search).get('lang');
+        var saved = localStorage.getItem('lang');
+        if (q === 'es' || q === 'en') lang = q; else if (saved === 'es' || saved === 'en') lang = saved;
+      } catch (e) {}
+      document.documentElement.lang = lang;
+    })();
+  </script>
+</head>
+<body>
+
+  <!--
+    POLÍTICA DE PRIVACIDAD — borrador.
+    Los datos del titular (nombre, NIF, domicilio, hosting, plazo, fecha) se escriben una sola vez
+    en js/content.js, bloque studio.legal, y aparecen aquí automáticamente. Mientras falte alguno,
+    la página muestra el hueco marcado como «pendiente» y el aviso de borrador.
+    El texto describe la web tal como funciona hoy: el formulario abre el correo del visitante,
+    no hay cookies ni analítica y las tipografías se sirven desde la propia web. Si eso cambia
+    (un servicio de formularios, analítica, vídeos incrustados…), hay que actualizar los
+    apartados 2, 6 y 8.
+    El texto está en español y en inglés: si cambias uno, cambia también el otro.
+  -->
+
+  <nav class="nav is-scrolled" aria-label="Principal">
+    <a class="brand nav__brand" href="index.html" data-studio-name>KN.</a>
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es" lang="es" aria-pressed="true" aria-label="Español">ES</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false" aria-label="English">EN</button>
+      </div>
+      <a class="nav__back" href="index.html"><span data-only="es">Volver a la web</span><span data-only="en">Back to the site</span></a>
+    </div>
+  </nav>
+
+  <main class="legal">
+
+    <!-- ============================================================ ESPAÑOL -->
+    <article class="wrap" data-only="es" lang="es">
+      <p class="label eyebrow">Información legal</p>
+      <h1>Política de privacidad</h1>
+      <p class="legal__draft" data-legal-draft>Borrador: faltan por completar los datos marcados como pendientes.</p>
+      <p class="legal__intro">En <span data-studio-name>KN.</span> tratamos únicamente los datos que nos envías para pedirnos una propuesta. Esta política explica qué datos son, para qué los usamos y qué derechos tienes, conforme al Reglamento (UE) 2016/679 (RGPD) y a la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales.</p>
+
+      <h2>1. Responsable del tratamiento</h2>
+      <dl>
+        <dt>Responsable</dt><dd><span class="legal__todo" data-legal="owner">Pendiente: nombre y apellidos o razón social</span></dd>
+        <dt>NIF</dt><dd><span class="legal__todo" data-legal="taxId">Pendiente: NIF</span></dd>
+        <dt>Domicilio</dt><dd><span class="legal__todo" data-legal="address">Pendiente: domicilio</span></dd>
+        <dt>Email</dt><dd><span data-email>Pendiente: email</span></dd>
+      </dl>
+
+      <h2>2. Qué datos tratamos</h2>
+      <p>Los que nos facilitas al enviarnos un brief o al escribirnos: tu nombre, tu marca o sitio web, tu dirección de email y la información que incluyas en el mensaje. No solicitamos datos de categorías especiales.</p>
+      <p>El formulario de brief no transmite datos a través de este sitio: abre tu propia aplicación de correo con el mensaje ya escrito, y eres tú quien decide enviarlo.</p>
+
+      <h2>3. Para qué los usamos</h2>
+      <ul>
+        <li>Responder a tu consulta y preparar y enviarte una propuesta.</li>
+        <li>Si nos encargas un proyecto, gestionar la relación profesional: comunicación, entrega del trabajo y facturación.</li>
+      </ul>
+      <p>No enviamos comunicaciones comerciales sin tu consentimiento, no elaboramos perfiles y no tomamos decisiones automatizadas.</p>
+
+      <h2>4. Base jurídica</h2>
+      <ul>
+        <li>La aplicación de medidas precontractuales a petición tuya y, en su caso, la ejecución del contrato (artículo 6.1.b del RGPD).</li>
+        <li>El cumplimiento de obligaciones legales, como las fiscales y contables (artículo 6.1.c del RGPD).</li>
+      </ul>
+
+      <h2>5. Durante cuánto tiempo los conservamos</h2>
+      <p>Mientras atendemos tu solicitud. Si no llega a haber encargo, conservamos la conversación como máximo <span class="legal__todo" data-legal="retention">Pendiente: plazo</span>. Si hay encargo, durante la relación profesional y, después, durante los plazos que exige la normativa fiscal y mercantil.</p>
+
+      <h2>6. A quién se comunican</h2>
+      <p>No cedemos tus datos a terceros, salvo obligación legal. Para prestar el servicio contamos con estos proveedores:</p>
+      <ul>
+        <li>Correo electrónico: Gmail, de Google.</li>
+        <li>Alojamiento web: <span class="legal__todo" data-legal="host">Pendiente: empresa de hosting</span>, que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad.</li>
+      </ul>
+      <p>Estos proveedores pueden tratar datos fuera del Espacio Económico Europeo, con las garantías que exige el RGPD.</p>
+
+      <h2>7. Tus derechos</h2>
+      <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo a <span data-email>Pendiente: email</span> e indicando qué derecho quieres ejercer. Responderemos en el plazo máximo de un mes.</p>
+      <p>Si consideras que no hemos atendido correctamente tu solicitud, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).</p>
+
+      <h2>8. Cookies y almacenamiento local</h2>
+      <p>Este sitio no utiliza cookies de análisis ni de publicidad, ni carga servicios de terceros que rastreen tu navegación. Las tipografías se sirven desde el propio sitio.</p>
+      <p>Solo se guarda en tu navegador el idioma que eliges (español o inglés), para recordarlo en tu próxima visita. Ese dato no te identifica y no se envía a ningún servidor.</p>
+
+      <h2>9. Cambios en esta política</h2>
+      <p>Podemos actualizar esta política si cambian nuestros servicios o la normativa. La versión vigente es siempre la publicada en esta página.</p>
+
+      <p class="legal__updated">Última actualización: <span class="legal__todo" data-legal="updated">Pendiente: fecha</span></p>
+    </article>
+
+    <!-- ============================================================ ENGLISH -->
+    <article class="wrap" data-only="en" lang="en">
+      <p class="label eyebrow">Legal information</p>
+      <h1>Privacy policy</h1>
+      <p class="legal__draft" data-legal-draft>Draft: the details marked as pending still need to be completed.</p>
+      <p class="legal__intro">At <span data-studio-name>KN.</span> we only process the data you send us to request a proposal. This policy explains what that data is, what we use it for and what rights you have, in accordance with Regulation (EU) 2016/679 (GDPR) and Spanish Organic Law 3/2018 on the Protection of Personal Data and guarantee of digital rights.</p>
+
+      <h2>1. Data controller</h2>
+      <dl>
+        <dt>Controller</dt><dd><span class="legal__todo" data-legal="owner">Pending: full name or company name</span></dd>
+        <dt>Tax ID (NIF)</dt><dd><span class="legal__todo" data-legal="taxId">Pending: tax ID</span></dd>
+        <dt>Address</dt><dd><span class="legal__todo" data-legal="address">Pending: address</span></dd>
+        <dt>Email</dt><dd><span data-email>Pending: email</span></dd>
+      </dl>
+
+      <h2>2. What data we process</h2>
+      <p>The data you give us when you send a brief or write to us: your name, your brand or website, your email address and whatever information you include in your message. We do not ask for special categories of data.</p>
+      <p>The brief form does not transmit data through this website: it opens your own email app with the message already written, and you decide whether to send it.</p>
+
+      <h2>3. What we use it for</h2>
+      <ul>
+        <li>Answering your enquiry and preparing and sending you a proposal.</li>
+        <li>If you commission a project, managing the professional relationship: communication, delivery of the work and invoicing.</li>
+      </ul>
+      <p>We do not send commercial communications without your consent, we do not build profiles and we do not make automated decisions.</p>
+
+      <h2>4. Legal basis</h2>
+      <ul>
+        <li>Taking pre-contractual steps at your request and, where applicable, performing the contract (Article 6(1)(b) GDPR).</li>
+        <li>Complying with legal obligations, such as tax and accounting duties (Article 6(1)(c) GDPR).</li>
+      </ul>
+
+      <h2>5. How long we keep it</h2>
+      <p>For as long as we are handling your request. If no project is commissioned, we keep the conversation for a maximum of <span class="legal__todo" data-legal="retention">Pending: period</span>. If a project is commissioned, for the duration of the professional relationship and, afterwards, for the periods required by tax and commercial law.</p>
+
+      <h2>6. Who it is shared with</h2>
+      <p>We do not share your data with third parties, unless required by law. To provide the service we rely on these providers:</p>
+      <ul>
+        <li>Email: Gmail, by Google.</li>
+        <li>Web hosting: <span class="legal__todo" data-legal="host">Pending: hosting company</span>, which may log technical connection data, such as the IP address, for security reasons.</li>
+      </ul>
+      <p>These providers may process data outside the European Economic Area, with the safeguards required by the GDPR.</p>
+
+      <h2>7. Your rights</h2>
+      <p>You can exercise your rights of access, rectification, erasure, objection, restriction of processing and portability by writing to <span data-email>Pending: email</span> and stating which right you wish to exercise. We will reply within a maximum of one month.</p>
+      <p>If you believe we have not handled your request properly, you can lodge a complaint with the Spanish Data Protection Agency (www.aepd.es).</p>
+
+      <h2>8. Cookies and local storage</h2>
+      <p>This website uses no analytics or advertising cookies and loads no third-party services that track your browsing. Fonts are served from the website itself.</p>
+      <p>Only the language you choose (Spanish or English) is stored in your browser, to remember it on your next visit. It does not identify you and is not sent to any server.</p>
+
+      <h2>9. Changes to this policy</h2>
+      <p>We may update this policy if our services or the regulations change. The version in force is always the one published on this page.</p>
+      <p>This text is a translation. In the event of any discrepancy, the Spanish version prevails.</p>
+
+      <p class="legal__updated">Last updated: <span class="legal__todo" data-legal="updated">Pending: date</span></p>
+    </article>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__bottom">
+      <p>© <span data-year>2026</span> <span data-studio-name>KN.</span></p>
+      <p class="footer__legal">
+        <a href="aviso-legal.html"><span data-only="es">Aviso legal</span><span data-only="en">Legal notice</span></a>
+        <a href="privacidad.html" aria-current="page"><span data-only="es">Privacidad</span><span data-only="en">Privacy</span></a>
+      </p>
+      <a class="link" href="index.html"><span data-only="es">Volver a la web</span><span data-only="en">Back to the site</span></a>
+    </div>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/legal.js"></script>
+</body>
+</html>

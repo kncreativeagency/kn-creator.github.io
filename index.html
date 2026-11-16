@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KN. — Producción creativa con IA</title>
+  <meta name="description" content="Estudio independiente de producción creativa con IA. Fotografía de producto, vídeos estilo UGC y anuncios hypermotion estilo 3D para marcas y e-commerce." data-i18n-attr="content:meta.description">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KN.">
+  <meta property="og:title" content="La imagen que tu marca merece." data-i18n-attr="content:meta.ogTitle">
+  <meta property="og:description" content="Producción creativa con IA para marcas y e-commerce." data-i18n-attr="content:meta.ogDescription">
+  <meta property="og:url" content="https://naomirivasborges-creator.github.io/">
+  <meta property="og:image" content="https://naomirivasborges-creator.github.io/assets/images/hero-maison-lune.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://naomirivasborges-creator.github.io/">
+  <meta name="theme-color" content="#0a0a09">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a09'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23e2bb7a'/%3E%3C/svg%3E">
+
+  <!-- Tipografías servidas desde la propia web (css/fonts.css + assets/fonts/) -->
+  <link rel="preload" href="assets/fonts/antonio-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    /* Idioma: español por defecto; se recuerda la elección del visitante (o ?lang=en en la URL). */
+    (function () {
+      var d = document.documentElement, lang = 'es';
+      try {
+        var q = new URLSearchParams(location.search).get('lang');
+        var saved = localStorage.getItem('lang');
+        if (q === 'es' || q === 'en') lang = q; else if (saved === 'es' || saved === 'en') lang = saved;
+      } catch (e) {}
+      d.lang = lang;
+      d.classList.add('js');
+    })();
+  </script>
+</head>
+<body>
+
+  <!--
+    Los textos de esta página están en español (idioma por defecto).
+    Las versiones ES / EN de cada texto se editan en js/translations.js:
+    cada elemento con data-i18n="clave" recibe el texto de esa clave.
+  -->
+
+  <a class="skip" href="#work" data-i18n="skip">Saltar a proyectos</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- ================================================================ NAV -->
+  <nav class="nav" aria-label="Principal" data-i18n-attr="aria-label:nav.aria">
+    <a class="brand nav__brand" href="#top" data-studio-name>KN.</a>
+    <div class="nav__right">
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#services" data-i18n="nav.services">Servicios</a></li>
+        <li><a href="#work" data-i18n="nav.work">Proyectos</a></li>
+        <li><a href="#about" data-i18n="nav.about">Estudio</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+        <li class="nav__mobile-only"><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <div class="lang" role="group" aria-label="Idioma" data-i18n-attr="aria-label:lang.aria">
+        <button type="button" data-lang="es" lang="es" aria-pressed="true" aria-label="Español">ES</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false" aria-label="English">EN</button>
+      </div>
+      <a class="btn btn--accent nav__cta" href="#contact" data-i18n="nav.cta">Hablemos</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menú</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============================================================= INICIO -->
+    <header class="hero" id="top">
+      <div class="hero__media" id="hero-media"><!-- se rellena desde js/content.js --></div>
+      <div class="hero__text">
+        <p class="label eyebrow hero__eyebrow" data-i18n="hero.eyebrow">Estudio de producción creativa con IA</p>
+        <h1 class="hero__title">
+          <span class="line"><span data-i18n="hero.line1">La imagen</span></span>
+          <span class="line line--outline"><span data-i18n="hero.line2">que tu marca</span></span>
+          <span class="line line--accent"><span data-i18n="hero.line3">merece.</span></span>
+        </h1>
+        <p class="hero__sub" data-i18n="hero.sub">Imagen y vídeo con IA para e-commerce de moda, accesorios y cosmética. Fotografía de producto, vídeos UGC y anuncios con acabado de campaña.</p>
+        <div class="hero__actions">
+          <a class="btn btn--accent" href="#contact">
+            <span data-i18n="hero.cta">Pide tu propuesta</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 12h15M12.5 5.5 19 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          </a>
+          <a class="link" href="#work" data-i18n="hero.cta2">Ver proyectos</a>
+        </div>
+        <p class="hero__note" data-i18n="hero.note">Envíanos tu brief y recibe una propuesta en 24 horas, sin compromiso.</p>
+      </div>
+    </header>
+
+    <!-- Cinta de servicios (se rellena desde translations.js, clave "marquee") -->
+    <div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee"></div></div>
+
+    <!-- ========================================================== SERVICIOS -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="label eyebrow" data-i18n="services.title">Servicios</p>
+          <h2 class="display" id="services-title" data-i18n-html="services.heading">Tres servicios. <em>Un único foco.</em></h2>
+        </div>
+
+        <div class="svc-list">
+          <article class="svc reveal">
+            <div class="svc__text">
+              <p class="label svc__eyebrow">01 · <span data-i18n="s1.title">Fotografía de producto con IA</span></p>
+              <h3 class="svc__title" data-i18n="s1.hook">Tu producto, en cualquier escenario.</h3>
+              <p class="svc__body" data-i18n="s1.body">Producción de las fotos de tu producto: imágenes de producto, escenas lifestyle e imagen editorial de alta gama, creadas a partir de tu producto real. El packaging, las etiquetas y los logotipos se mantienen exactamente como son.</p>
+              <ul class="chips">
+                <li data-i18n="s1.a">Alta resolución</li>
+                <li data-i18n="s1.b">Producto, lifestyle y editorial</li>
+                <li data-i18n="s1.c">E-commerce y campaña</li>
+              </ul>
+              <a class="link svc__more" href="#photography"><span data-i18n="services.more">Ver ejemplos</span> <span aria-hidden="true">→</span></a>
+            </div>
+            <!-- La imagen o los vídeos de cada servicio se eligen en js/content.js (services) -->
+            <div class="svc__media svc__media--photo" data-service-media="photo"></div>
+          </article>
+
+          <article class="svc reveal">
+            <div class="svc__text">
+              <p class="label svc__eyebrow">02 · <span data-i18n="s2.title">Vídeos estilo UGC con IA</span></p>
+              <h3 class="svc__title" data-i18n="s2.hook">Contenido cercano que conecta.</h3>
+              <p class="svc__body" data-i18n="s2.body">Anuncios en vídeo de aspecto natural y estética de creador de contenido, generados con IA. Personas creíbles, entornos que se sienten reales y tu producto en el centro del encuadre.</p>
+              <ul class="chips">
+                <li data-i18n="s2.a">Vídeo vertical</li>
+                <li data-i18n="s2.b">A cámara y lifestyle</li>
+                <li data-i18n="s2.c">Listo para subir</li>
+              </ul>
+              <a class="link svc__more" href="#ugc"><span data-i18n="services.more">Ver ejemplos</span> <span aria-hidden="true">→</span></a>
+            </div>
+            <!-- La imagen o los vídeos de cada servicio se eligen en js/content.js (services) -->
+            <div class="svc__media svc__media--ugc" data-service-media="ugc"></div>
+          </article>
+
+          <article class="svc reveal">
+            <div class="svc__text">
+              <p class="label svc__eyebrow">03 · <span data-i18n="s3.title">Anuncios y vídeos Hypermotion 3D</span></p>
+              <h3 class="svc__title" data-i18n="s3.hook">El impacto de una gran producción.</h3>
+              <p class="svc__body" data-i18n="s3.body">Anuncios cinematográficos y vídeos de producto de estilo 3D, con movimientos de cámara dinámicos y efectos visuales. El acabado de un anuncio de alta gama, sin necesidad de una gran producción.</p>
+              <ul class="chips">
+                <li data-i18n="s3.a">Efectos visuales</li>
+                <li data-i18n="s3.b">Estilo 3D</li>
+                <li data-i18n="s3.c">Vertical y panorámico</li>
+              </ul>
+              <a class="link svc__more" href="#ads"><span data-i18n="services.more">Ver ejemplos</span> <span aria-hidden="true">→</span></a>
+            </div>
+            <!-- La imagen o los vídeos de cada servicio se eligen en js/content.js (services) -->
+            <div class="svc__media svc__media--motion" data-service-media="motion"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================== PROYECTOS SELECCIONADOS -->
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="label eyebrow" data-i18n="work.eyebrow">Portfolio</p>
+          <h2 class="display" id="work-title" data-i18n-html="work.heading">Proyectos <em>seleccionados</em></h2>
+          <p class="section-head__intro" data-i18n="work.intro">Imagen fija y en movimiento producida con IA y dirigida al detalle, pieza a pieza.</p>
+        </div>
+
+        <ul class="cat-nav reveal" aria-label="Categorías" data-i18n-attr="aria-label:work.catAria">
+          <li><a href="#photography"><span data-i18n="cat.photo">Fotografía con IA</span><sup data-count="photography"></sup></a></li>
+          <li><a href="#ugc"><span data-i18n="cat.ugc">Vídeos estilo UGC con IA</span><sup data-count="ugc"></sup></a></li>
+          <li><a href="#ads"><span data-i18n="cat.ads">Anuncios con IA</span><sup data-count="ads"></sup></a></li>
+          <li><a href="#hypermotion"><span data-i18n="cat.hyper">Hypermotion 3D de producto</span><sup data-count="hypermotion"></sup></a></li>
+        </ul>
+
+        <!-- 01 — Fotografía con IA -->
+        <section class="cat" id="photography" aria-labelledby="cat-photo">
+          <header class="cat-head reveal">
+            <div>
+              <p class="label cat-index">01 / 04</p>
+              <h3 class="cat-title" id="cat-photo" data-i18n="cat.photo">Fotografía con IA</h3>
+            </div>
+            <p class="cat-desc" data-i18n="cat.photo.desc">Imagen de producto, lifestyle y editorial.</p>
+          </header>
+          <div class="mosaic" id="photography-list"></div>
+        </section>
+
+        <!-- 02 — Vídeos estilo UGC con IA -->
+        <section class="cat" id="ugc" aria-labelledby="cat-ugc">
+          <header class="cat-head reveal">
+            <div>
+              <p class="label cat-index">02 / 04</p>
+              <h3 class="cat-title" id="cat-ugc" data-i18n="cat.ugc">Vídeos estilo UGC con IA</h3>
+            </div>
+            <p class="cat-desc" data-i18n="cat.ugc.desc">Anuncios en vídeo naturales, con estética de creador de contenido.</p>
+          </header>
+          <div class="clips" id="ugc-list"></div>
+        </section>
+
+        <!-- 03 — Anuncios con IA -->
+        <section class="cat" id="ads" aria-labelledby="cat-ads">
+          <header class="cat-head reveal">
+            <div>
+              <p class="label cat-index">03 / 04</p>
+              <h3 class="cat-title" id="cat-ads" data-i18n="cat.ads">Anuncios con IA</h3>
+            </div>
+            <p class="cat-desc" data-i18n="cat.ads.desc">Spots publicitarios cinematográficos, con efectos visuales y acabado de campaña.</p>
+          </header>
+          <div class="clips" id="ads-list"></div>
+        </section>
+
+        <!-- 04 — Hypermotion 3D de producto -->
+        <section class="cat" id="hypermotion" aria-labelledby="cat-hyper">
+          <header class="cat-head reveal">
+            <div>
+              <p class="label cat-index">04 / 04</p>
+              <h3 class="cat-title" id="cat-hyper" data-i18n="cat.hyper">Hypermotion 3D de producto</h3>
+            </div>
+            <p class="cat-desc" data-i18n="cat.hyper.desc">Vídeos de producto de estilo 3D, con movimientos de cámara dinámicos.</p>
+          </header>
+          <div class="clips" id="hypermotion-list"></div>
+        </section>
+
+        <noscript><p class="empty">Activa JavaScript para ver la galería.</p></noscript>
+      </div>
+    </section>
+
+    <!-- =========================================================== CLIENTES
+         Los nombres se editan en js/content.js (clients). -->
+    <section class="clients" id="clients" aria-labelledby="clients-title">
+      <div class="wrap clients__head reveal">
+        <p class="label eyebrow" data-i18n="clients.eyebrow">Clientes</p>
+        <h2 class="display clients__title" id="clients-title" data-i18n-html="clients.heading">Marcas que <em>confían en nosotros.</em></h2>
+      </div>
+      <ul class="sr-only" id="clients-list"></ul>
+      <div class="marquee marquee--accent" aria-hidden="true"><div class="marquee__track" id="clients-marquee"></div></div>
+    </section>
+
+    <!-- ============================================================ PROCESO -->
+    <section class="section section--light process" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="label eyebrow" data-i18n="process.eyebrow">Cómo trabajamos</p>
+          <h2 class="display" id="process-title" data-i18n-html="process.title">Tú traes la idea. <em>Nosotros la producimos.</em></h2>
+        </div>
+
+        <ol class="steps">
+          <li class="reveal">
+            <span class="steps__num" aria-hidden="true">01</span>
+            <h3 data-i18n="step1.label">Briefing</h3>
+            <p data-i18n="step1.text">Nos envías tu briefing, tus productos, tus conceptos y tus referencias visuales.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__num" aria-hidden="true">02</span>
+            <h3 data-i18n="step2.label">Producción</h3>
+            <p data-i18n="step2.text">Producimos tus imágenes y tus vídeos, con dirección de arte en cada pieza.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__num" aria-hidden="true">03</span>
+            <h3 data-i18n="step3.label">Entrega</h3>
+            <p data-i18n="step3.text">Recibes los archivos finales, listos para publicar en tu tienda y en tus campañas.</p>
+          </li>
+        </ol>
+        <p class="scope__note reveal" data-i18n="scope.note">Nos centramos en una sola cosa: producir imagen. La gestión de redes sociales, los calendarios de contenido, la estrategia de marca, la compra de medios y la publicación quedan en tus manos o en las de tu agencia.</p>
+      </div>
+    </section>
+
+    <!-- ====================================================== POR QUÉ CON IA -->
+    <section class="section why" id="why" aria-labelledby="why-title">
+      <div class="wrap">
+        <div class="section-head section-head--center reveal">
+          <p class="label eyebrow" data-i18n="why.eyebrow">Por qué con IA</p>
+          <h2 class="display" id="why-title" data-i18n-html="why.heading">Calidad de campaña, <em>sin las complicaciones de siempre.</em></h2>
+        </div>
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <span class="why-card__num" aria-hidden="true">01</span>
+            <h3 data-i18n="w1.title">Más rápido y más sencillo</h3>
+            <p data-i18n="w1.text">Olvídate de organizar sesiones de fotos, buscar localizaciones o coordinar equipos. Creamos la escena que tu marca necesita y la tienes lista en mucho menos tiempo que con una producción tradicional.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-card__num" aria-hidden="true">02</span>
+            <h3 data-i18n="w2.title">Un producto, muchas piezas</h3>
+            <p data-i18n="w2.text">A partir del mismo producto creamos distintas escenas, formatos y versiones: fijas, verticales y panorámicas, para tu tienda y tus campañas.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-card__num" aria-hidden="true">03</span>
+            <h3 data-i18n="w3.title">Acabado sin concesiones</h3>
+            <p data-i18n="w3.text">Cada pieza se dirige al detalle y tu producto se respeta al milímetro: packaging, etiquetas y logotipos, tal como son.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ ESTUDIO -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="wrap about__grid">
+        <div class="about__head reveal">
+          <p class="label eyebrow" data-i18n="about.title">Estudio</p>
+          <h2 class="display" id="about-title" data-i18n-html="about.heading">La dirección de arte <em>va primero.</em></h2>
+        </div>
+        <div class="about__body">
+          <p class="about__statement reveal" data-i18n="about.statement">Cualquiera puede generar una imagen. Nosotros la dirigimos: composición, luz, estilismo y movimiento decididos al detalle, como en una producción de campaña.</p>
+          <div class="about__cols reveal">
+            <p data-i18n="about.p1">Tu producto no se toca. Lo representamos con total fidelidad: el packaging, las etiquetas y los logotipos aparecen exactamente como son, en cada imagen y en cada vídeo.</p>
+            <p data-i18n="about.p2">Trabajamos a partir de tu briefing y tus referencias, y entregamos piezas acabadas, listas para tu tienda online y tus campañas. Un proceso claro, un único interlocutor y el mismo nivel de exigencia en cada entrega.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ FAQ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="faq__head reveal">
+          <p class="label eyebrow" data-i18n="faq.eyebrow">Preguntas frecuentes</p>
+          <h2 class="display" id="faq-title" data-i18n="faq.title">FAQ</h2>
+        </div>
+        <div class="faq__list reveal">
+          <details class="faq__item" name="faq">
+            <summary><span data-i18n="faq.q1">¿Las imágenes y los vídeos están hechos con IA?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+            <p data-i18n="faq.a1">Sí. Producimos con herramientas de inteligencia artificial y dirigimos cada pieza al detalle. Tu producto aparece tal como es, con su packaging, sus etiquetas y sus logotipos intactos.</p>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary><span data-i18n="faq.q5">¿Podéis adaptaros al estilo de mi marca?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+            <p data-i18n="faq.a5">Sí. Antes de producir definimos contigo la dirección visual a partir de tu briefing y tus referencias. Si tu marca ya tiene una identidad definida, la respetamos.</p>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary><span data-i18n="faq.q6">¿Hacéis foto y vídeo?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+            <p data-i18n="faq.a6">Las dos cosas: fotografía de producto, vídeos estilo UGC, anuncios y vídeos hypermotion 3D. Puedes encargar una sola pieza o combinar varias.</p>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary><span data-i18n="faq.q7">¿Cuáles son los plazos de entrega?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+            <p data-i18n="faq.a7">Cada proyecto tiene su propio calendario, que definimos contigo en la propuesta según el número de piezas y su complejidad. Al producir con IA, los plazos son considerablemente más cortos que los de una producción tradicional.</p>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary><span data-i18n="faq.q2">¿Qué necesito para empezar?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+            <p data-i18n="faq.a2">Tu briefing, tus productos, tus conceptos y tus referencias visuales. A partir de ahí nos encargamos de la producción.</p>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary><span data-i18n="faq.q3">¿Gestionáis redes sociales o campañas?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+            <p data-i18n="faq.a3">No. Somos un estudio de producción y nos dedicamos solo a crear tus imágenes y tus vídeos. La gestión de redes, los calendarios de contenido, la estrategia de marca, la compra de medios y la publicación quedan en tus manos o en las de tu agencia.</p>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary><span data-i18n="faq.q4">¿Qué recibo al final?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+            <p data-i18n="faq.a4">Los archivos finales de las imágenes y los vídeos que has pedido, listos para que los publiques y los uses en tus campañas.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================== CONTACTO -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="label eyebrow reveal" data-i18n="contact.label">Contacto</p>
+        <h2 class="contact__title reveal" id="contact-title" data-i18n-html="contact.title">Demos vida a <em>tu visión.</em></h2>
+        <p class="contact__text reveal" data-i18n="contact.text">Cuéntanos tu proyecto: envíanos tu briefing, los detalles del producto y tus referencias visuales, y recibe una propuesta a medida en 24 horas.</p>
+
+        <!-- Formulario de brief: al enviar abre el correo del visitante con el brief escrito,
+             dirigido al email de js/content.js (studio.email). Sin email, queda desactivado. -->
+        <form class="brief reveal" id="brief-form">
+          <div class="brief__row">
+            <label class="field"><span class="label" data-i18n="brief.name">Nombre</span><input type="text" name="name" autocomplete="name" required></label>
+            <label class="field"><span class="label" data-i18n="brief.brand">Marca o web</span><input type="text" name="brand" autocomplete="organization"></label>
+          </div>
+          <fieldset class="field">
+            <legend class="label" data-i18n="brief.need">¿Qué necesitas?</legend>
+            <div class="checks">
+              <label class="check"><input type="checkbox" name="need"><span data-i18n="brief.opt1">Fotografía de producto</span></label>
+              <label class="check"><input type="checkbox" name="need"><span data-i18n="brief.opt2">Vídeos UGC</span></label>
+              <label class="check"><input type="checkbox" name="need"><span data-i18n="brief.opt3">Anuncios / Hypermotion 3D</span></label>
+            </div>
+          </fieldset>
+          <label class="field"><span class="label" data-i18n="brief.message">Cuéntanos tu proyecto</span><textarea name="message" rows="4" required></textarea></label>
+          <div class="brief__foot">
+            <button class="btn btn--accent" type="submit">
+              <span data-i18n="brief.send">Enviar brief</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 12h15M12.5 5.5 19 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+            <p class="brief__note" data-i18n="brief.note">Sin compromiso. Recibirás tu propuesta en 24 horas. Al enviar se abre tu aplicación de correo con el brief ya escrito.</p>
+          </div>
+          <p class="brief__privacy" data-i18n-html="brief.privacy">Usaremos tus datos únicamente para responder a tu solicitud. Más información en la <a href="privacidad.html">política de privacidad</a>.</p>
+          <p class="brief__pending" data-brief-pending hidden data-i18n="brief.pending">[ El formulario se activará cuando se añada el email del estudio ]</p>
+        </form>
+
+        <p class="contact__mail reveal">
+          <span class="label" data-i18n="contact.emailLabel">O escríbenos directamente</span>
+          <!-- El email se toma de js/content.js (studio.email) -->
+          <span class="contact__placeholder" data-email="contact__email" data-i18n="contact.placeholder">[ Dirección de email pendiente ]</span>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================ PIE -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <a class="brand" href="#top" data-studio-name>KN.</a>
+        <p class="footer__tagline" data-i18n="footer.tagline">Producción creativa con IA para marcas y e-commerce.</p>
+      </div>
+      <div>
+        <p class="label footer__label" data-i18n="services.title">Servicios</p>
+        <ul class="footer__list">
+          <li><a href="#services" data-i18n="s1.title">Fotografía de producto con IA</a></li>
+          <li><a href="#services" data-i18n="s2.title">Vídeos estilo UGC con IA</a></li>
+          <li><a href="#services" data-i18n="s3.title">Anuncios y vídeos Hypermotion 3D</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="label footer__label" data-i18n="contact.label">Contacto</p>
+        <ul class="footer__list">
+          <li><span data-email data-i18n="contact.placeholder">[ Dirección de email pendiente ]</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <p>© <span data-year>2026</span> <span data-studio-name>KN.</span></p>
+      <p class="footer__legal">
+        <a href="aviso-legal.html" data-i18n="footer.legal">Aviso legal</a>
+        <a href="privacidad.html" data-i18n="footer.privacy">Privacidad</a>
+      </p>
+      <p class="footer__note" data-i18n="footer.note">Los proyectos marcados como «Concepto independiente» son estudios creativos de iniciativa propia. No han sido encargados por las marcas que aparecen, ni están afiliados a ellas ni cuentan con su respaldo.</p>
+      <a class="link" href="#top" data-i18n="footer.top">Volver arriba</a>
+    </div>
+  </footer>
+
+  <!-- Visor de imágenes -->
+  <dialog class="lightbox" id="lightbox" aria-label="Visor de imágenes" data-i18n-attr="aria-label:viewer.aria">
+    <div class="lightbox__bar">
+      <p class="label" id="lightbox-caption"></p>
+      <button class="lightbox__btn" type="button" data-lb="close" data-i18n="viewer.close">Cerrar</button>
+    </div>
+    <div class="lightbox__stage" data-lb="stage">
+      <img id="lightbox-img" alt="">
+    </div>
+    <div class="lightbox__bar lightbox__bar--bottom">
+      <button class="lightbox__btn" type="button" data-lb="prev" aria-label="Imagen anterior" data-i18n="viewer.prev" data-i18n-attr="aria-label:viewer.prevAria">← Anterior</button>
+      <p class="label" id="lightbox-count"></p>
+      <button class="lightbox__btn" type="button" data-lb="next" aria-label="Imagen siguiente" data-i18n="viewer.next" data-i18n-attr="aria-label:viewer.nextAria">Siguiente →</button>
+    </div>
+  </dialog>
+
+  <script src="js/translations.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

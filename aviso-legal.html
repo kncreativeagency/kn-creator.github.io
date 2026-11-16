@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KN. — Aviso legal</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0a0a09">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a09'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23e2bb7a'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/antonio-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    /* Idioma: el mismo que el visitante eligió en la página principal (o ?lang=en en la URL). */
+    (function () {
+      var lang = 'es';
+      try {
+        var q = new URLSearchParams(location.search).get('lang');
+        var saved = localStorage.getItem('lang');
+        if (q === 'es' || q === 'en') lang = q; else if (saved === 'es' || saved === 'en') lang = saved;
+      } catch (e) {}
+      document.documentElement.lang = lang;
+    })();
+  </script>
+</head>
+<body>
+
+  <!--
+    AVISO LEGAL — borrador.
+    Los datos del titular (nombre, NIF, domicilio, dominio, fecha) se escriben una sola vez en
+    js/content.js, bloque studio.legal, y aparecen aquí automáticamente. Mientras falte alguno,
+    la página muestra el hueco marcado como «pendiente» y el aviso de borrador.
+    El texto está en español y en inglés: si cambias uno, cambia también el otro.
+  -->
+
+  <nav class="nav is-scrolled" aria-label="Principal">
+    <a class="brand nav__brand" href="index.html" data-studio-name>KN.</a>
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es" lang="es" aria-pressed="true" aria-label="Español">ES</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false" aria-label="English">EN</button>
+      </div>
+      <a class="nav__back" href="index.html"><span data-only="es">Volver a la web</span><span data-only="en">Back to the site</span></a>
+    </div>
+  </nav>
+
+  <main class="legal">
+
+    <!-- ============================================================ ESPAÑOL -->
+    <article class="wrap" data-only="es" lang="es">
+      <p class="label eyebrow">Información legal</p>
+      <h1>Aviso legal</h1>
+      <p class="legal__draft" data-legal-draft>Borrador: faltan por completar los datos marcados como pendientes.</p>
+
+      <h2>1. Titular del sitio web</h2>
+      <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, se informa de los datos del titular de este sitio web:</p>
+      <dl>
+        <dt>Nombre comercial</dt><dd data-studio-name>KN.</dd>
+        <dt>Titular</dt><dd><span class="legal__todo" data-legal="owner">Pendiente: nombre y apellidos o razón social</span></dd>
+        <dt>NIF</dt><dd><span class="legal__todo" data-legal="taxId">Pendiente: NIF</span></dd>
+        <dt>Domicilio</dt><dd><span class="legal__todo" data-legal="address">Pendiente: domicilio</span></dd>
+        <dt>Email</dt><dd><span data-email>Pendiente: email</span></dd>
+        <dt>Sitio web</dt><dd><span class="legal__todo" data-legal="domain">Pendiente: dominio</span></dd>
+      </dl>
+
+      <h2>2. Objeto</h2>
+      <p>Este sitio web presenta los servicios de producción creativa con inteligencia artificial de <span data-studio-name>KN.</span> —fotografía de producto, vídeos de estilo UGC y anuncios y vídeos hypermotion— junto con una selección de trabajos. El acceso es gratuito y no requiere registro.</p>
+      <p>La información publicada tiene carácter informativo y no constituye una oferta contractual. Las condiciones de cada encargo (alcance, plazos y precio) se acuerdan por escrito en la propuesta correspondiente.</p>
+
+      <h2>3. Condiciones de uso</h2>
+      <p>Quien accede a este sitio se compromete a utilizarlo de forma lícita y de buena fe, sin dañar su funcionamiento ni los derechos del titular o de terceros. El uso del sitio implica la aceptación de este aviso legal.</p>
+
+      <h2>4. Propiedad intelectual e industrial</h2>
+      <p>El diseño, los textos y el código de este sitio web pertenecen a su titular. Las imágenes y los vídeos del portfolio han sido producidos por <span data-studio-name>KN.</span> y no pueden reproducirse, distribuirse, comunicarse públicamente ni transformarse sin autorización previa y por escrito.</p>
+      <p>Las marcas, los productos, los envases y los logotipos de terceros que aparecen en los trabajos pertenecen a sus respectivos titulares.</p>
+
+      <h2>5. Proyectos de concepto independiente</h2>
+      <p>Los proyectos identificados como «Concepto independiente» son estudios creativos de iniciativa propia. No han sido encargados por las marcas que aparecen, ni están afiliados a ellas ni cuentan con su respaldo.</p>
+
+      <h2>6. Contenido creado con inteligencia artificial</h2>
+      <p>Las imágenes y los vídeos que se muestran en este sitio se han producido con herramientas de inteligencia artificial generativa, bajo la dirección creativa de <span data-studio-name>KN.</span></p>
+
+      <h2>7. Responsabilidad</h2>
+      <p>El titular trabaja para que la información del sitio sea correcta y esté actualizada, pero no garantiza la ausencia de errores ni la disponibilidad ininterrumpida del sitio. No se hace responsable de los daños derivados de un uso indebido del sitio ni de interrupciones debidas a causas ajenas a su control.</p>
+      <p>Si este sitio enlaza a páginas de terceros, el titular no responde de sus contenidos ni de sus políticas de privacidad.</p>
+
+      <h2>8. Protección de datos</h2>
+      <p>El tratamiento de los datos personales que nos facilites se explica en la <a href="privacidad.html">política de privacidad</a>.</p>
+
+      <h2>9. Legislación aplicable</h2>
+      <p>Este aviso legal se rige por la legislación española. Cualquier controversia se someterá a los juzgados y tribunales que correspondan conforme a la normativa aplicable.</p>
+
+      <p class="legal__updated">Última actualización: <span class="legal__todo" data-legal="updated">Pendiente: fecha</span></p>
+    </article>
+
+    <!-- ============================================================ ENGLISH -->
+    <article class="wrap" data-only="en" lang="en">
+      <p class="label eyebrow">Legal information</p>
+      <h1>Legal notice</h1>
+      <p class="legal__draft" data-legal-draft>Draft: the details marked as pending still need to be completed.</p>
+
+      <h2>1. Website owner</h2>
+      <p>In compliance with Article 10 of Spanish Law 34/2002 of 11 July on Information Society Services and Electronic Commerce, the details of the owner of this website are:</p>
+      <dl>
+        <dt>Trading name</dt><dd data-studio-name>KN.</dd>
+        <dt>Owner</dt><dd><span class="legal__todo" data-legal="owner">Pending: full name or company name</span></dd>
+        <dt>Tax ID (NIF)</dt><dd><span class="legal__todo" data-legal="taxId">Pending: tax ID</span></dd>
+        <dt>Address</dt><dd><span class="legal__todo" data-legal="address">Pending: address</span></dd>
+        <dt>Email</dt><dd><span data-email>Pending: email</span></dd>
+        <dt>Website</dt><dd><span class="legal__todo" data-legal="domain">Pending: domain</span></dd>
+      </dl>
+
+      <h2>2. Purpose</h2>
+      <p>This website presents the AI creative production services of <span data-studio-name>KN.</span> — product photography, UGC-style videos, and hypermotion ads and videos — together with a selection of work. Access is free and requires no registration.</p>
+      <p>The information published here is for information purposes and does not constitute a contractual offer. The terms of each commission (scope, timings and price) are agreed in writing in the corresponding proposal.</p>
+
+      <h2>3. Terms of use</h2>
+      <p>Anyone accessing this website agrees to use it lawfully and in good faith, without harming its operation or the rights of the owner or of third parties. Use of the website implies acceptance of this legal notice.</p>
+
+      <h2>4. Intellectual and industrial property</h2>
+      <p>The design, texts and code of this website belong to its owner. The images and videos in the portfolio were produced by <span data-studio-name>KN.</span> and may not be reproduced, distributed, publicly communicated or transformed without prior written authorisation.</p>
+      <p>Third-party brands, products, packaging and logos appearing in the work belong to their respective owners.</p>
+
+      <h2>5. Independent concept projects</h2>
+      <p>Projects marked “Independent concept” are self-initiated creative studies. They were not commissioned by, and are not affiliated with or endorsed by, the brands shown.</p>
+
+      <h2>6. Content created with artificial intelligence</h2>
+      <p>The images and videos shown on this website were produced with generative artificial intelligence tools, under the creative direction of <span data-studio-name>KN.</span></p>
+
+      <h2>7. Liability</h2>
+      <p>The owner works to keep the information on this website accurate and up to date, but does not guarantee the absence of errors or the uninterrupted availability of the website. The owner is not liable for damage arising from misuse of the website or from interruptions due to causes beyond their control.</p>
+      <p>Where this website links to third-party pages, the owner is not responsible for their content or their privacy policies.</p>
+
+      <h2>8. Data protection</h2>
+      <p>The processing of any personal data you provide is explained in the <a href="privacidad.html">privacy policy</a>.</p>
+
+      <h2>9. Applicable law</h2>
+      <p>This legal notice is governed by Spanish law. Any dispute will be submitted to the courts that have jurisdiction under the applicable rules.</p>
+      <p>This text is a translation. In the event of any discrepancy, the Spanish version prevails.</p>
+
+      <p class="legal__updated">Last updated: <span class="legal__todo" data-legal="updated">Pending: date</span></p>
+    </article>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__bottom">
+      <p>© <span data-year>2026</span> <span data-studio-name>KN.</span></p>
+      <p class="footer__legal">
+        <a href="aviso-legal.html" aria-current="page"><span data-only="es">Aviso legal</span><span data-only="en">Legal notice</span></a>
+        <a href="privacidad.html"><span data-only="es">Privacidad</span><span data-only="en">Privacy</span></a>
+      </p>
+      <a class="link" href="index.html"><span data-only="es">Volver a la web</span><span data-only="en">Back to the site</span></a>
+    </div>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/legal.js"></script>
+</body>
+</html>
