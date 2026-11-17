@@ -24,7 +24,7 @@ window.SITE = {
       owner: "Naomi Rivas Borges",   // titular de la web: nombre y apellidos, o razón social
       taxId: "",       // NIF / CIF — opcional: mientras esté vacío, la línea del NIF no aparece en las páginas
       address: { es: "Ibiza, España", en: "Ibiza, Spain" },   // domicilio profesional o fiscal
-      domain: "naomirivasborges-creator.github.io/kn-creator.github.io",   // dirección de la web (cámbiala aquí si conectas un dominio propio)
+      domain: "kncreativeagency.github.io/kn-creator.github.io",   // dirección de la web (cámbiala aquí si conectas un dominio propio)
       host: "GitHub Pages (GitHub, Inc.)",            // empresa de alojamiento web (hosting)
       retention: { es: "12 meses", en: "12 months" },   // cuánto tiempo guardas las consultas que no acaban en encargo
       updated: { es: "16 de noviembre de 2026", en: "16 November 2026" }   // fecha de la última revisión de los textos, por ejemplo "20 de noviembre de 2026"
