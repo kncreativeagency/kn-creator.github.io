@@ -14,7 +14,7 @@ window.SITE = {
 
   studio: {
     name: "KN.",           // nombre provisional del estudio: cámbialo aquí y se actualiza en toda la página
-    email: "kn.creativeagency@gmail.com",  // email de contacto: aparece en Contacto y en el pie, y recibe los briefs del formulario
+    email: "kncreativeagency@gmail.com",  // email de contacto: aparece en Contacto y en el pie, y recibe los briefs del formulario
 
     /* Datos para el aviso legal y la política de privacidad (aviso-legal.html y privacidad.html).
        Mientras un dato esté vacío, la página legal muestra un hueco marcado como «pendiente»
